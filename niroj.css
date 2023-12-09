@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 80%; /* Adjusted for better responsiveness */
+    background: red;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.Temperature-icon {
+    font-size: 5vw; /* Responsive font size based on viewport width */
+    color: rgb(0, 162, 255);
+}
+
+h1 {
+    color:rgb(82, 255, 47);
+    letter-spacing: 1.5px;
+    font-size: 3vw; /* Responsive font size based on viewport width */
+}
+
+#celsius,
+#fahrenheit,
+#kelvin,
+#rankine,
+#reaumur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input {
+    flex: 5;
+    height: 6vw; /* Responsive height based on viewport width */
+    font-size: 2.5vw; /* Responsive font size based on viewport width */
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 2vw; /* Responsive padding based on viewport width */
+}
+
+.icon {
+    flex: 1;
+    height: 6vw; /* Responsive height based on viewport width */
+    line-height: 6vw; /* Responsive line-height based on viewport width */
+    font-size: 3vw; /* Responsive font size based on viewport width */
+    padding: 0 1vw; /* Responsive padding based on viewport width */
+    text-align: center;
+    background: greenyellow;
+    color: red;
+    border-radius: 0 8px 8px 0;
+}
+
+.button {
+    margin-top: 2vw; /* Responsive margin based on viewport width */
+    text-align: center;
+}
+
+.button button {
+    border: none;
+    outline: none;
+    padding: 1vw 3vw; /* Responsive padding based on viewport width */
+    font-size: 2vw; /* Responsive font size based on viewport width */
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover {
+    background: red;
+    color: white;
+}
